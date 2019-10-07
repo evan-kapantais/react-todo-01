@@ -21,7 +21,7 @@ export class TodoItem extends Component {
         <p>
           <input type="checkbox" onChange={this.props.markComplete.bind(this, id)} style={{marginRight: 20}}/>
           { title }
-          <button style={{float: 'right'}} onClick={this.props.deleteTodo.bind(this, id)}>DELETE</button>
+          <button className="btn" style={{float: 'right'}} onClick={this.props.deleteTodo.bind(this, id)}>DELETE</button>
         </p>
       </div>
     )
